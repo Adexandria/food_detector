@@ -6,7 +6,7 @@ from pathlib import Path
 import json 
 from PIL import Image
 
-def predict(model,frame, device):
+def predict(model, frame, device):
    
     file_path = Path("data/labels.json")
     if not file_path.exists():
