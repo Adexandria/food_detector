@@ -1,0 +1,191 @@
+{
+  "Savory Meat Sandwiches & Wraps": [
+    "banh_mi",
+    "burger",
+    "club_sandwich",
+    "gyro",
+    "hamburger",
+    "nachos",
+    "pizza",
+    "sandwich",
+    "tacos",
+    "taquito",
+    "tostadas"
+  ],
+  "Vegetable Dishes & Salads": [
+    "artichoke_bottoms_in_olive_oil",
+    "baked_potato",
+    "caesar_salad",
+    "caprese_salad",
+    "greek_salad",
+    "guacamole",
+    "ispanak",
+    "kisir",
+    "melitzanosalata",
+    "paneer_tikka",
+    "ratatouille",
+    "salade_nicoise",
+    "thai_papaya_salad"
+  ],
+  "Meat-Centric Dishes": [
+    "baby_back_ribs",
+    "beef_carpaccio",
+    "beef_in_oyster_sauce",
+    "charcoal-boiled_pork_neck",
+    "cig_kofte",
+    "confit_de_canard",
+    "foie_gras",
+    "kebap",
+    "peking_duck",
+    "prime_rib",
+    "souvlaki",
+    "steak",
+    "tandoori_chicken"
+  ],
+  "Meat & Vegetable Stews & Curries": [
+    "beef_bourguignon",
+    "blanquette_de_veau",
+    "green_curry",
+    "pozole",
+    "sukiyaki",
+    "yellow_curry"
+  ],
+  "Meat & Vegetable Noodle Dishes": [
+    "bun_cha",
+    "cao_lau",
+    "chow_mein",
+    "lasagna",
+    "pad_thai",
+    "zha_jiang_mian"
+  ],
+  "Meat & Vegetable Stir-Fries & Bakes": [
+    "chiles_en_nogada",
+    "enchiladas",
+    "goya_champuru",
+    "hunkar_begendi",
+    "kung_pao_chicken",
+    "moussaka",
+    "sarma",
+    "twice_cooked_pork"
+  ],
+  "Meat Noodle Soups": [
+    "hue_beef_rice_vermicelli_soup",
+    "khao_soi",
+    "okinawa_soba",
+    "pho",
+    "ramen"
+  ],
+  "Fried Vegetable Sides": [
+    "fries",
+    "kolokythokeftedes",
+    "onion_rings",
+    "tomatokeftedes"
+  ],
+  "Savory Meat Pastries & Breads": [
+    "borek",
+    "chicken_quesadilla",
+    "hot_dog"
+  ],
+  "Vegetarian Pastries & Breads": [
+    "bruschetta",
+    "naan",
+    "papdi_chaat",
+    "spanakopita",
+    "spring_rolls"
+  ],
+  "Meat & Rice Dishes": [
+    "biryani",
+    "com_tam",
+    "steamed_rice_roll"
+  ],
+  "Meat Soups & Stews": [
+    "butter_chicken",
+    "coq_au_vin",
+    "rogan_josh",
+    "stewed_pork_leg"
+  ],
+  "Vegetable Soups & Stews": [
+    "chole",
+    "french_onion_soup",
+    "hot_and_sour_soup",
+    "kaali_daal",
+    "malai_kofta",
+    "minestrone",
+    "palak_paneer",
+    "winter_melon_soup"
+  ],
+  "Seafood Soups": [
+    "clam_chowder",
+    "hot_and_sour_fish_and_vegetable_ragout",
+    "lobster_bisque"
+  ],
+  "Fried Meat Dishes": [
+    "crispy_chicken",
+    "fried_pork_in_scoop",
+    "icli_kofte"
+  ],
+  "Meat Dumplings & Stuffed Pastas": [
+    "manti",
+    "ravioli",
+    "xiao_long_bao"
+  ],
+  "Vegetable & Rice Dishes": [
+    "mushroom_risotto",
+    "yemista"
+  ],
+  "Seafood Noodle Soups": [
+    "noodles_with_fish_curry",
+    "vermicelli_noodles_with_snails"
+  ],
+  "Seafood & Rice Dishes": [
+    "shrimp_and_grits",
+    "sushi"
+  ],
+  "Meat Pastas": [
+    "pastitsio",
+    "spaghetti_bolognese",
+    "spaghetti_carbonara"
+  ],
+  "Egg & Bread/Tortilla Breakfasts": [
+    "breakfast_burrito",
+    "chilaquiles",
+    "huevos_rancheros"
+  ],
+  "Egg & Meat Sandwiches": [
+    "croque_madame",
+    "eggs_benedict"
+  ],
+  "Clear Broths & Soups": [
+    "coconut_milk_soup",
+    "miso_soup"
+  ],
+  "Plain Noodles & Pastas": [
+    "gnocchi",
+    "soba_noodle",
+    "udon_noodle"
+  ],
+  "Desserts & Sweets": [
+    "donut"
+  ],
+  "Seafood Dishes": [
+    "cha_ca",
+    "fried_mussel_pancakes",
+    "hamsi",
+    "sashimi",
+    "takoyaki",
+    "tempura"
+  ],
+  "Egg Dishes": [
+    "omelette"
+  ],
+  "Dairy & Cheese Dishes": [
+    "saganaki"
+  ],
+  "Seafood Sandwiches": [
+    "lobster_roll_sandwich"
+  ],
+  "Meat & Seafood Combinations": [
+    "banh_xeo",
+    "coconut_milk-flavored_crepes_with_shrimp_and_beef"
+  ]
+}

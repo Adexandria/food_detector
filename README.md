@@ -14,5 +14,14 @@ pip install -r requirements.txt
 
 ### Run Pipeline
 ```bash
-python detection_pipeline.py
+python detection_pipeline.py --use_resnet
 ```
+
+### API Usage
+To run API locally
+```bash
+python app.py
+```
+
+
+

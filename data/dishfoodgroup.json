@@ -1,0 +1,356 @@
+{
+  "artichoke_bottoms_in_olive_oil": [
+    "ff_vegetable"
+  ],
+  "baby_back_ribs": [
+    "ff_meat"
+  ],
+  "baked_potato": [
+    "ff_vegetable"
+  ],
+  "banh_mi": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "banh_xeo": [
+    "ff_meat,ff_seafood,ff_vegetable"
+  ],
+  "beef_bourguignon": [
+    "ff_meat,ff_soup,ff_vegetable"
+  ],
+  "beef_carpaccio": [
+    "ff_meat"
+  ],
+  "beef_in_oyster_sauce": [
+    "ff_meat"
+  ],
+  "biryani": [
+    "ff_meat,ff_rice"
+  ],
+  "blanquette_de_veau": [
+    "ff_meat,ff_soup,ff_vegetable"
+  ],
+  "borek": [
+    "ff_bread,ff_meat"
+  ],
+  "breakfast_burrito": [
+    "ff_bread,ff_egg,ff_meat,ff_vegetable"
+  ],
+  "bruschetta": [
+    "ff_bread,ff_vegetable"
+  ],
+  "bun_cha": [
+    "ff_meat,ff_noodles/pasta,ff_vegetable"
+  ],
+  "burger": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "butter_chicken": [
+    "ff_meat,ff_soup"
+  ],
+  "caesar_salad": [
+    "ff_vegetable"
+  ],
+  "cao_lau": [
+    "ff_meat,ff_noodles/pasta,ff_vegetable"
+  ],
+  "caprese_salad": [
+    "ff_vegetable"
+  ],
+  "cha_ca": [
+    "ff_noodles/pasta,ff_seafood,ff_vegetable"
+  ],
+  "chicken_quesadilla": [
+    "ff_bread,ff_meat"
+  ],
+  "chilaquiles": [
+    "ff_bread,ff_egg,ff_vegetable"
+  ],
+  "chiles_en_nogada": [
+    "ff_meat,ff_vegetable"
+  ],
+  "chole": [
+    "ff_soup,ff_vegetable"
+  ],
+  "chow_mein": [
+    "ff_meat,ff_noodles/pasta,ff_vegetable"
+  ],
+  "cig_kofte": [
+    "ff_meat"
+  ],
+  "clam_chowder": [
+    "ff_seafood,ff_soup"
+  ],
+  "club_sandwich": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "coconut_milk_soup": [
+    "ff_soup"
+  ],
+  "com_tam": [
+    "ff_egg,ff_meat,ff_rice,ff_vegetable"
+  ],
+  "confit_de_canard": [
+    "ff_meat"
+  ],
+  "coq_au_vin": [
+    "ff_meat,ff_soup"
+  ],
+  "crispy_chicken": [
+    "ff_fried_food,ff_meat"
+  ],
+  "croque_madame": [
+    "ff_bread,ff_egg,ff_meat"
+  ],
+  "donut": [
+    "ff_bread,ff_fried_food"
+  ],
+  "eggs_benedict": [
+    "ff_bread,ff_egg,ff_meat"
+  ],
+  "enchiladas": [
+    "ff_bread,ff_meat,ff_soup"
+  ],
+  "foie_gras": [
+    "ff_meat"
+  ],
+  "french_onion_soup": [
+    "ff_bread,ff_soup,ff_vegetable"
+  ],
+  "fries": [
+    "ff_fried_food,ff_vegetable"
+  ],
+  "gnocchi": [
+    "ff_noodles/pasta"
+  ],
+  "goya_champuru": [
+    "ff_egg,ff_meat,ff_vegetable"
+  ],
+  "greek_salad": [
+    "ff_vegetable"
+  ],
+  "green_curry": [
+    "ff_meat,ff_soup,ff_vegetable"
+  ],
+  "guacamole": [
+    "ff_vegetable"
+  ],
+  "gyro": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "hamburger": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "hamsi": [
+    "ff_fried_food,ff_seafood"
+  ],
+  "hot_dog": [
+    "ff_bread,ff_meat"
+  ],
+  "hue_beef_rice_vermicelli_soup": [
+    "ff_meat,ff_noodles/pasta,ff_soup,ff_vegetable"
+  ],
+  "huevos_rancheros": [
+    "ff_bread,ff_egg,ff_vegetable"
+  ],
+  "hunkar_begendi": [
+    "ff_meat,ff_vegetable"
+  ],
+  "icli_kofte": [
+    "ff_fried_food,ff_meat"
+  ],
+  "ispanak": [
+    "ff_vegetable"
+  ],
+  "kaali_daal": [
+    "ff_soup,ff_vegetable"
+  ],
+  "kebap": [
+    "ff_meat"
+  ],
+  "khao_soi": [
+    "ff_meat,ff_noodles/pasta,ff_soup"
+  ],
+  "kisir": [
+    "ff_vegetable"
+  ],
+  "kolokythokeftedes": [
+    "ff_fried_food,ff_vegetable"
+  ],
+  "kung_pao_chicken": [
+    "ff_meat,ff_vegetable"
+  ],
+  "lasagna": [
+    "ff_meat,ff_noodles/pasta,ff_vegetable"
+  ],
+  "lobster_bisque": [
+    "ff_seafood,ff_soup"
+  ],
+  "lobster_roll_sandwich": [
+    "ff_bread,ff_seafood"
+  ],
+  "malai_kofta": [
+    "ff_dumpling,ff_vegetable"
+  ],
+  "manti": [
+    "ff_dumpling,ff_meat"
+  ],
+  "melitzanosalata": [
+    "ff_vegetable"
+  ],
+  "minestrone": [
+    "ff_noodles/pasta,ff_soup,ff_vegetable"
+  ],
+  "miso_soup": [
+    "ff_soup"
+  ],
+  "moussaka": [
+    "ff_meat,ff_vegetable"
+  ],
+  "mushroom_risotto": [
+    "ff_rice,ff_vegetable"
+  ],
+  "naan": [
+    "ff_bread"
+  ],
+  "nachos": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "noodles_with_fish_curry": [
+    "ff_noodles/pasta,ff_seafood,ff_soup"
+  ],
+  "okinawa_soba": [
+    "ff_meat,ff_noodles/pasta,ff_soup"
+  ],
+  "omelette": [
+    "ff_egg"
+  ],
+  "onion_rings": [
+    "ff_fried_food,ff_vegetable"
+  ],
+  "palak_paneer": [
+    "ff_vegetable"
+  ],
+  "paneer_tikka": [
+    "ff_vegetable"
+  ],
+  "papdi_chaat": [
+    "ff_bread,ff_vegetable"
+  ],
+  "pastitsio": [
+    "ff_meat,ff_noodles/pasta"
+  ],
+  "peking_duck": [
+    "ff_meat"
+  ],
+  "pho": [
+    "ff_meat,ff_noodles/pasta,ff_soup"
+  ],
+  "pizza": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "pozole": [
+    "ff_meat,ff_soup,ff_vegetable"
+  ],
+  "prime_rib": [
+    "ff_meat"
+  ],
+  "ramen": [
+    "ff_egg,ff_meat,ff_noodles/pasta,ff_soup"
+  ],
+  "ratatouille": [
+    "ff_vegetable"
+  ],
+  "ravioli": [
+    "ff_dumpling,ff_meat"
+  ],
+  "rogan_josh": [
+    "ff_meat"
+  ],
+  "saganaki": [
+    "ff_fried_food"
+  ],
+  "salade_nicoise": [
+    "ff_egg,ff_seafood,ff_vegetable"
+  ],
+  "sandwich": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "sarma": [
+    "ff_meat,ff_rice,ff_vegetable"
+  ],
+  "sashimi": [
+    "ff_seafood"
+  ],
+  "soba_noodle": [
+    "ff_noodles/pasta"
+  ],
+  "souvlaki": [
+    "ff_meat"
+  ],
+  "spaghetti_bolognese": [
+    "ff_meat,ff_noodles/pasta"
+  ],
+  "spaghetti_carbonara": [
+    "ff_egg,ff_meat,ff_noodles/pasta"
+  ],
+  "spanakopita": [
+    "ff_bread,ff_vegetable"
+  ],
+  "spring_rolls": [
+    "ff_fried_food,ff_vegetable"
+  ],
+  "steak": [
+    "ff_meat"
+  ],
+  "sukiyaki": [
+    "ff_meat,ff_soup,ff_vegetable"
+  ],
+  "sushi": [
+    "ff_rice,ff_seafood"
+  ],
+  "tacos": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "takoyaki": [
+    "ff_dumpling,ff_seafood"
+  ],
+  "tandoori_chicken": [
+    "ff_meat"
+  ],
+  "taquito": [
+    "ff_bread,ff_fried_food,ff_meat,ff_vegetable"
+  ],
+  "tempura": [
+    "ff_fried_food,ff_seafood,ff_vegetable"
+  ],
+  "thai_papaya_salad": [
+    "ff_vegetable"
+  ],
+  "tomatokeftedes": [
+    "ff_fried_food,ff_vegetable"
+  ],
+  "tostadas": [
+    "ff_bread,ff_meat,ff_vegetable"
+  ],
+  "udon_noodle": [
+    "ff_noodles/pasta,ff_soup"
+  ],
+  "vermicelli_noodles_with_snails": [
+    "ff_noodles/pasta,ff_seafood,ff_soup"
+  ],
+  "winter_melon_soup": [
+    "ff_soup,ff_vegetable"
+  ],
+  "xiao_long_bao": [
+    "ff_dumpling,ff_meat,ff_soup"
+  ],
+  "yellow_curry": [
+    "ff_meat,ff_soup,ff_vegetable"
+  ],
+  "yemista": [
+    "ff_rice,ff_vegetable"
+  ],
+  "zha_jiang_mian": [
+    "ff_meat,ff_noodles/pasta,ff_vegetable"
+  ]
+}
