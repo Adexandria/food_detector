@@ -50,7 +50,7 @@ curl  -X POST \
 ----------
 
 ### Using Swagger
-
+docs: `https://papri-ka-food-detector.hf.space/docs#/detect/detect_image_detect_post`
 -   **Request URL:**  
     `https://papri-ka-food-detector.hf.space/detect?name=mobilenet`
     
