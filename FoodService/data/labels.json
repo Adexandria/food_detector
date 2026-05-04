@@ -1,0 +1,26 @@
+{
+    "name": [
+        "Baked Potato",
+        "Burger",
+        "Crispy Chicken",
+        "Donut",
+        "Fries",
+        "Hot Dog",
+        "Pizza",
+        "Sandwich",
+        "Taco",
+        "Taquito"
+    ],
+    "labels": [
+        "baked_potato",
+        "burger",
+        "crispy_chicken",
+        "donut",
+        "fries",
+        "hot_dog",
+        "pizza",
+        "sandwich",
+        "taco",
+        "taquito"
+    ]
+}
