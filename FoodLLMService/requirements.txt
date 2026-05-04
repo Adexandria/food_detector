@@ -1,0 +1,5 @@
+transformers
+fastapi
+uvicorn
+python-multipart
+accelerate
