@@ -1,58 +1,54 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import json
 import time
+from openai import OpenAI
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct")
-model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", device_map="auto")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+BASE_URL = os.getenv("BASE_URL")
+
 
 def generate_llm_response(user_input, user_profile):
     date_and_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
     prompt = generate_food_prompt(user_input, user_profile, date_and_time)
 
-    messages = [
-        {"role": "user", "content": prompt},
-    ]
+    client = OpenAI(api_key=OPENAI_API_KEY, base_url=BASE_URL)
 
-    inputs = tokenizer.apply_chat_template(
-	messages,
-	add_generation_prompt=True,
-	tokenize=True,
-	return_dict=True,
-	return_tensors="pt",
-    ).to(model.device)
+    response = client.chat.completions.create(
+        model= "gpt-4.1-mini",
+        messages= [ {"role": "user", "content": prompt} ],
+    )
 
-    outputs = model.generate(**inputs, max_length=1000)
+    current_response = response.choices[0].message.content
+
+    print(f"Generated nutritional response: {current_response}")
     
-    response = tokenizer.decode(outputs[0][inputs["input_ids"].shape[-1]:])
-    print(f"Generated LLM response: {response}")
-
-    return response
+    return current_response
 
 
 def generate_food_nutritional_response(dish):
     prompt = generate_nutritional_prompt(dish)
 
-    inputs = tokenizer(prompt, return_tensors="pt")
-
     messages = [
         {"role": "user", "content": prompt},
     ]
 
-    inputs = tokenizer.apply_chat_template(
-	messages,
-	add_generation_prompt=True,
-	tokenize=True,
-	return_dict=True,
-	return_tensors="pt",
-    ).to(model.device)
+    client = OpenAI(api_key=OPENAI_API_KEY, base_url=BASE_URL)
 
-    outputs = model.generate(**inputs, max_length=100)
+    response = client.chat.completions.create(
+        model= "gpt-4.1-mini",
+        messages= messages,
+    )
+
+    current_response = response.choices[0].message.content
+
+    print(f"Generated nutritional response: {current_response}")
     
-    response = tokenizer.decode(outputs[0][inputs["input_ids"].shape[-1]:])
-    
-    return response
+    return current_response
 
 
 

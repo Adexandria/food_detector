@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Body, Query,UploadFile, File ,HTTPException
-from validations.response import Response
+from validations.response import Response, create_response
 from validations.request import PredictionResponse
 from models.inference import generate_llm_response, generate_food_nutritional_response
 import userService
@@ -14,8 +14,8 @@ router = APIRouter()
 async def main(user_message: str = Query(...)) -> Response:
     try:
         user_profile = userService.read_user_profile("jane_smith")
-        llm_response = generate_llm_response(user_message, user_profile)
-        return Response(llm_response=llm_response, is_task_completed=True)
+        llm_text = generate_llm_response(user_message, user_profile)
+        return create_response(llm_text)
     except Exception as e:
         print(f"Error in /main endpoint: {e}")
         return Response(llm_response=[], is_task_completed=False)
