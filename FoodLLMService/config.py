@@ -1,4 +1,8 @@
-USERPROFILE_PATH = "FoodLLMService\\data\\user_profiles.json"
+import os
+
+DIRECTORY_PATH = os.path.dirname(os.path.abspath(__file__))
+
+USERPROFILE_PATH = os.path.join(DIRECTORY_PATH, "data", "user_profiles.json")
 
 USER_PROFILE_KEYWORDS = {
         "NAME": "name",

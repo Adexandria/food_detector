@@ -18,7 +18,7 @@ async def main(user_message: str = Query(...)) -> Response:
         return create_response(llm_text)
     except Exception as e:
         print(f"Error in /main endpoint: {e}")
-        return Response(llm_response=[], is_task_completed=False)
+        return Response(response_segments=[], is_task_completed=False)
 
 
 @router.post("/set-food")
