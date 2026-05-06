@@ -1,0 +1,18 @@
+services:
+  food-llm-service:
+    build: 
+      context: ./FoodLLMService
+      dockerfile: Dockerfile
+    container_name: food-llm-service
+    ports:
+      - "8080:8080"
+    env_file: example.env
+  
+  food-service:
+    build: 
+      context: ./FoodService
+      dockerfile: Dockerfile
+    container_name: food-service
+    ports:
+      - "8000:8000"
+    
