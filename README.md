@@ -1,11 +1,11 @@
 
-# 🥗 Nutrition Microservices
+# Nutrition Microservices
 
 This project contains **two microservices** designed to support **nutrition and dietary monitoring for elderly individuals** through food detection and conversational AI.
 
 ----------
 
-# 📦 Services Overview
+## Services Overview
 
 ```text
 ┌──────────────────────┐
@@ -20,10 +20,28 @@ This project contains **two microservices** designed to support **nutrition and 
 └──────────────────────┘
 
 ```
+## Setup
+
+### Create Virtual Environment
+
+```bash
+python -m venv .venv
+
+```
 
 ----------
 
-# 🍱 Food Service
+### Install Dependencies
+
+```bash
+pip3 install torch torchvision
+pip install -r requirements.txt
+
+```
+
+----------
+
+##  Food Service
 
 This service simulates how a robot:
 
@@ -31,7 +49,7 @@ This service simulates how a robot:
     
 2.  Processes the image
     
-3.  Classifies the food item using classifers
+3.  Classifies the food item using classifiers
 
 The classifier uses pretrained:
 
@@ -42,32 +60,11 @@ The classifier uses pretrained:
 
 Models are available on Kaggle:
 
-👉 `https://www.kaggle.com/code/adeolawuraolaade/food-inference`
+ `https://www.kaggle.com/code/adeolawuraolaade/food-inference`
 
 ----------
 
-# ⚙️ Setup
-
-## 1️⃣ Create Virtual Environment
-
-```bash
-python -m venv .venv
-
-```
-
-----------
-
-## 2️⃣ Install Dependencies
-
-```bash
-pip3 install torch torchvision
-pip install -r requirements.txt
-
-```
-
-----------
-
-# ▶️ Run Detection Pipeline
+### Run Detection Pipeline
 
 ```bash
 python detection_pipeline.py --use_resnet
@@ -76,25 +73,17 @@ python detection_pipeline.py --use_resnet
 
 ----------
 
-# 🌐 API Usage
+### API Usage
 
 The API supports two models:
 
-Model
+- ResNet: `resnet`
 
-Parameter
-
-ResNet
-
-`resnet`
-
-MobileNet V3 Large
-
-`mobilenet`
+- MobileNet V3 Large: `mobilenet`
 
 ----------
 
-# 🚀 Run API Locally
+###  Run API Locally
 
 ```bash
 python app.py
@@ -103,9 +92,9 @@ python app.py
 
 ----------
 
-# ☁️ Hosted API
+### Hosted API
 
-## Using cURL
+### Using cURL
 
 ```bash
 curl -X POST \
@@ -118,7 +107,7 @@ curl -X POST \
 
 ----------
 
-# 📘 Swagger Documentation
+### Swagger Documentation
 
 Docs:
 
@@ -127,14 +116,14 @@ https://papri-ka-food-detector.hf.space/docs#/detect/detect_image_detect_post
 
 ```
 
-### Request URL
+#### Request URL
 
 ```text
 https://papri-ka-food-detector.hf.space/detect?name=mobilenet
 
 ```
 
-### Parameters
+#### Parameters
 
 Choose one:
 
@@ -143,14 +132,14 @@ Choose one:
 -   `mobilenet`
     
 
-### Upload
+#### Upload
 
 -   Upload an image for food detection
     
 
 ----------
 
-# ✅ Example Response
+#### Example Response
 
 ```json
 {
@@ -171,15 +160,15 @@ Choose one:
 
 ----------
 
-# 🤖 Food LLM Service
+## Food LLM Service
 
 This service uses **GPT-4.1-mini** to simulate conversations between the robot and the elderly person.
 
 ----------
 
-# 🧠 Features
+## Features
 
-## `/main`
+### `/main`
 
 Engages in conversation using:
 
@@ -192,7 +181,7 @@ Engages in conversation using:
 
 ----------
 
-## `/set-food`
+### `/set-food`
 
 Used to:
 
@@ -207,7 +196,7 @@ Used to:
 
 ----------
 
-# 🔄 System Workflow
+## System Workflow
 
 ```text
         Image Input
@@ -235,7 +224,7 @@ Used to:
 
 ----------
 
-# 🛠️ Tech Stack
+## Tech Stack
 
 -   Python
     
