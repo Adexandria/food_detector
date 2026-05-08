@@ -22,4 +22,4 @@ def create_response(text: str) -> Response:
         expression=expression,
         pause_ms=0
     )
-    return Response(response_segments=[response], is_task_completed=True)
+    return Response(response_segments=[response], is_task_completed=False)
