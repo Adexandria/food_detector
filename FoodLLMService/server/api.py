@@ -18,15 +18,15 @@ async def main(user_message: str = Query(...)) -> Response:
         return create_response(llm_text)
     except Exception as e:
         print(f"Error in /main endpoint: {e}")
-        return Response(response_segments=[], is_task_completed=False)
+        return Response(response_segments=[], is_task_completed=True)
 
 
 @router.post("/set-food")
 async def set_food(response: PredictionResponse = Body(...)):
     try:
-        dish = response.predicted_label.Specific_dish
+        dish = response.predicted_label.specific_dish
         if dish.lower() == "unknown":
-            dish = response.predicted_label.Food_group[0] if response.predicted_label.Food_group else "unknown dish"
+            dish = response.predicted_label.food_group[0] if response.predicted_label.food_group else "unknown dish"
         
         nutritional_response = generate_food_nutritional_response(dish)
 
