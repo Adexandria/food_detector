@@ -29,7 +29,7 @@ async def set_food(response: PredictionResponse = Body(...)):
     try:
         dish = response.predicted_label.specific_dish
         if dish.lower() == "unknown":
-            dish = response.predicted_label.food_group[0] if response.predicted_label.food_group else "unknown dish"
+            dish = response.predicted_label.food_groups[0] if response.predicted_label.food_groups else "unknown dish"
         
         nutritional_response = generate_food_nutritional_response(dish)
 
