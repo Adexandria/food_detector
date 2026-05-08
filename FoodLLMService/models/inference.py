@@ -1,5 +1,3 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import json
 import time
 from openai import OpenAI
 import os
@@ -11,16 +9,26 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 BASE_URL = os.getenv("BASE_URL")
 
 
-def generate_llm_response(user_input, user_profile):
+def generate_llm_response(user_input, user_profile, messages_history):
     date_and_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 
-    prompt = generate_food_prompt(user_input, user_profile, date_and_time)
+    prompt = generate_user_food_prompt(user_input, user_profile, date_and_time)
 
     client = OpenAI(api_key=OPENAI_API_KEY, base_url=BASE_URL)
 
+    system_message = get_system_prompt()
+
+    messages = [
+        {"role": "system", "content": system_message},
+    ]
+
+    messages.extend(messages_history)
+
+    messages.append({"role": "user", "content": prompt})
+
     response = client.chat.completions.create(
         model= "gpt-4.1-mini",
-        messages= [ {"role": "user", "content": prompt} ],
+        messages= messages,
     )
 
     current_response = response.choices[0].message.content
@@ -53,7 +61,7 @@ def generate_food_nutritional_response(dish):
 
 
 
-def generate_food_prompt(user_message, user_profile, date_and_time):
+def get_system_prompt():
     return  f"""
 You are Pixie, a virtual assistant integrated into a small robot designed to care for an elderly person.
 
@@ -97,12 +105,14 @@ Incorrect example: Good morning! [Action: Say hello, Expression: Exciting] Can I
 AVAILABLE ACTIONS: "Reset", "Push-ups", "Golden Rooster Independent", "Yoga", "Laughing", "Hug", "Squat", "Bent over", "Kung Fu", "Raise your right leg", "Raise left leg", "Raise your hands", "Welcome", "Nodding", "Waving left hand", "Waving right hand", "Right Lunge", "Shaking head", "Tilt head", "Say hello", "Handshake", "Blow kisses", "Selling cute", "Invite", "Goodbye", "Seeking hug", "Wow", "Like", "OK", "Hey ha", "Pretend to fly", "Make faces", "Ass Twist", "Kill you", "Hold your head"
 
 AVAILABLE EXPRESSIONS: "Looking around", "Sad", "Stretching sadness", "Falling asleep", "Frightened", "Sleepy", "Strange", "Surprised", "Sneeze", "Exciting", "Fighting Spirit", "Hard work", "Question", "Wake up", "Distress", "Cheap laugh", "Depressed", "Desire", "Love", "Blink", "Smile", "Shy", "Cover your face", "Irritation", "Poor", "Tears", "Crying", "Pain", "Get angry", "Arrogance", "White eyes", "Squeeze", "Hazy", "Daze", "Witty", "Reading glasses", "Golden Glasses"
-
-Elderly data: {user_message}
-Context: {user_profile}
-Date and time: {date_and_time}
 """
 
+def generate_user_food_prompt(user_message, user_profile, date_and_time):
+    return  f"""
+User message: {user_message}
+User profile: {user_profile}
+Date and time: {date_and_time}
+"""
 
 
 def generate_nutritional_prompt(dish):

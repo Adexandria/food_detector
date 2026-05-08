@@ -12,7 +12,7 @@ class Response(BaseModel):
     is_task_completed: bool = Field(..., description="Indicates if the task is completed")
 
 
-def create_response(text: str) -> Response:
+def create_llm_response(text: str, is_task_completed: bool = False) -> Response:
     llm_response =  text.split('[')
     action = re.search(r"Action:\s*([^,\]]+)", text).group(1).strip()
     expression = re.search(r"Expression:\s*([^,\]]+)", text).group(1).strip()
@@ -22,4 +22,4 @@ def create_response(text: str) -> Response:
         expression=expression,
         pause_ms=0
     )
-    return Response(response_segments=[response], is_task_completed=False)
+    return Response(response_segments=[response], is_task_completed=is_task_completed)

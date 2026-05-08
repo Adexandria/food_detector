@@ -4,6 +4,8 @@ DIRECTORY_PATH = os.path.dirname(os.path.abspath(__file__))
 
 USERPROFILE_PATH = os.path.join(DIRECTORY_PATH, "data", "user_profiles.json")
 
+MESSAGES_PATH = os.path.join(DIRECTORY_PATH, "data", "message_history.json")
+
 USER_PROFILE_KEYWORDS = {
         "NAME": "name",
         "AGE": "age",
@@ -15,4 +17,10 @@ USER_PROFILE_KEYWORDS = {
         "TIME": "time",
         "NUTRITIONAL_INFO": "nutritional_info"
     }
-    
+
+MESSAGE_KEYWORDS = {
+    "USER": "user",
+    "ASSISTANT": "assistant",
+    "TIMESTAMP": "timestamp",
+    "IS_TASK_COMPLETED": "is_task_completed"
+}

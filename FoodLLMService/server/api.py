@@ -1,12 +1,9 @@
-from fastapi import APIRouter, Depends, Body, Query,UploadFile, File ,HTTPException
-from validations.response import Response, create_response
+from fastapi import APIRouter, Depends, Body, Query,HTTPException
+from validations.response import Response, create_llm_response
 from validations.request import PredictionResponse
 from models.inference import generate_llm_response, generate_food_nutritional_response
 import userService
-from PIL import Image
-from typing import Annotated, Literal
-import torch
-import io
+
 
 router = APIRouter()
 
@@ -14,8 +11,14 @@ router = APIRouter()
 async def main(user_message: str = Query(...)) -> Response:
     try:
         user_profile = userService.read_user_profile("jane_smith")
-        llm_text = generate_llm_response(user_message, user_profile)
-        return create_response(llm_text)
+
+        user_message_history = userService.get_recent_user_message_history("jane_smith")
+
+        assistant_response = generate_llm_response(user_message, user_profile, user_message_history)
+
+        is_task_completed, cleaned_response = userService.add_user_message_history("jane_smith", user_message, assistant_response)
+
+        return create_llm_response(cleaned_response, is_task_completed=is_task_completed)
     except Exception as e:
         print(f"Error in /main endpoint: {e}")
         return Response(response_segments=[], is_task_completed=True)

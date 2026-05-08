@@ -1,0 +1,52 @@
+{
+    "jane_smith": [
+        {
+            "role": "user",
+            "content": "Hello, is this okay for me to eat?",
+            "timestamp": "2026-05-08",
+            "is_task_completed": false
+        },
+        {
+            "role": "assistant",
+            "content": "Hello Jane, baby back ribs are not vegetarian, so they don't match your preferences. For your diabetes, it\u2019s better to stick to meals with more vegetables and plant-based proteins. Would you like some ideas for a tasty, vegetarian dinner? [Action: Tilt head, Expression: Question]",
+            "timestamp": "2026-05-08",
+            "is_task_completed": false
+        },
+        {
+            "role": "user",
+            "content": "Thanks, bye",
+            "timestamp": "2026-05-08",
+            "is_task_completed": false
+        },
+        {
+            "role": "assistant",
+            "content": "Goodbye, Jane! Take care and remember to eat well. If you need me, I\u2019m here. [Action: Waving right hand, Expression: Smile] [TASK_COMPLETED]",
+            "timestamp": "2026-05-08",
+            "is_task_completed": false
+        },
+        {
+            "role": "user",
+            "content": "Thanks, bye",
+            "timestamp": "2026-05-08",
+            "is_task_completed": true
+        },
+        {
+            "role": "assistant",
+            "content": "Goodbye, Jane! Remember, I\u2019m here to help anytime you want to talk or need a hand with your meals. Take care! [Action: Waving right hand, Expression: Smile] [TASK_COMPLETED]",
+            "timestamp": "2026-05-08",
+            "is_task_completed": true
+        },
+        {
+            "role": "user",
+            "content": "Thanks, bye",
+            "timestamp": "2026-05-08",
+            "is_task_completed": true
+        },
+        {
+            "role": "assistant",
+            "content": "Goodbye, Jane! Take care and see you soon. [Action: Goodbye, Expression: Smile] [TASK_COMPLETED]",
+            "timestamp": "2026-05-08",
+            "is_task_completed": true
+        }
+    ]
+}

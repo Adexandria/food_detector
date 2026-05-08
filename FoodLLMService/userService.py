@@ -1,4 +1,4 @@
-from config import USERPROFILE_PATH, USER_PROFILE_KEYWORDS
+from config import  USERPROFILE_PATH, USER_PROFILE_KEYWORDS, MESSAGES_PATH, MESSAGE_KEYWORDS
 from datetime import datetime
 import json
 
@@ -27,8 +27,78 @@ def read_user_profile(user_id):
 
     formated_text = generate_text_context(food_consumed)
     return  f"""
-    {name}, aged {age}, has dietary preferences of {dietary_preferences} and is allergic to {allergies}. They have the following health conditions: {health_conditions}. Recently,  
+    {name}, aged {age}, has dietary preferences of {dietary_preferences} and is allergic to {allergies}. They have the following health conditions: {health_conditions}.  
     """ + formated_text
+
+
+def get_recent_user_message_history(user_id):
+    with open(MESSAGES_PATH, 'r') as f:
+        message_history = json.load(f)
+    
+    user_messages = message_history.get(user_id, [])
+    
+    if not user_messages:
+        message_history[user_id] = []
+        with open(MESSAGES_PATH, 'w') as f:
+            json.dump(message_history, f, indent=4)
+    
+    current_date = datetime.now().date()
+    
+    # Filter messages from today
+    today_messages = [
+        msg for msg in user_messages
+        if datetime.fromisoformat(msg[MESSAGE_KEYWORDS["TIMESTAMP"]]).date() == current_date
+    ]
+    
+    if not today_messages:
+        return []
+    
+    return (
+        []
+        if (
+            today_messages[-1][MESSAGE_KEYWORDS["IS_TASK_COMPLETED"]]
+            and today_messages[-2][MESSAGE_KEYWORDS["IS_TASK_COMPLETED"]]
+        )
+        else [
+            {
+                "role": msg[MESSAGE_KEYWORDS["USER"]],
+                "content": msg[MESSAGE_KEYWORDS["CONTENT"]]
+            }
+            for msg in today_messages
+            ]
+        )
+    
+
+
+def add_user_message_history(user_id, user_message, assistant_response)-> tuple[bool, str]:
+    with open(MESSAGES_PATH, 'r') as f:
+        all_message_history = json.load(f)
+        
+    user_messages = all_message_history.get(user_id, [])
+
+    is_task_completed = "[TASK_COMPLETED]" in assistant_response
+
+    cleaned_response = assistant_response.replace("[TASK_COMPLETED]", "").strip()
+
+    user_messages.append({
+        "role": "user",
+        "content": user_message,
+        "timestamp": datetime.now().date().strftime("%Y-%m-%d"),
+        "is_task_completed": is_task_completed
+    })
+    user_messages.append({
+        "role": "assistant",
+        "content": cleaned_response,
+        "timestamp": datetime.now().date().strftime("%Y-%m-%d"),
+        "is_task_completed": is_task_completed
+    })
+
+    all_message_history[user_id] = user_messages
+
+    with open(MESSAGES_PATH, 'w') as f:
+        json.dump(all_message_history, f, indent=4)
+
+    return is_task_completed, cleaned_response
 
 
 def generate_text_context(food_consumed):
@@ -37,24 +107,21 @@ def generate_text_context(food_consumed):
     if total_food_consumed == 0:
         return text_template + " No food consumed."
     
-    for i in range(total_food_consumed):
-        if i != 0:
-            text_template += " Additionally,"
-        
-        food_item = food_consumed[i]
+    food_item = food_consumed[total_food_consumed - 1]
 
-        dish = food_item[USER_PROFILE_KEYWORDS["DISH"]]
+    dish = food_item[USER_PROFILE_KEYWORDS["DISH"]]
 
-        time = food_item[USER_PROFILE_KEYWORDS["TIME"]]
+    time = food_item[USER_PROFILE_KEYWORDS["TIME"]]
 
-        nutritional_info = food_item[USER_PROFILE_KEYWORDS["NUTRITIONAL_INFO"]]
+    nutritional_info = food_item[USER_PROFILE_KEYWORDS["NUTRITIONAL_INFO"]]
 
-        day = convert_time_to_context(time)
+    day = convert_time_to_context(time)
 
-        text_template += f" they consumed a meal consisting of {dish} at {day}({time}), which has the following nutritional profile: {nutritional_info}."
+    text_template += f" They are eating a meal consisting of {dish} at {day}({time}), which has the following nutritional profile: {nutritional_info}."
     
     return text_template
     
+
 def update_user_food_profile(user_id, dish, nutritional_info):
     with open(USERPROFILE_PATH, 'r') as f:
         user_profiles = json.load(f)
@@ -79,11 +146,13 @@ def update_user_food_profile(user_id, dish, nutritional_info):
     with open(USERPROFILE_PATH, 'w') as f:
         json.dump(user_profiles, f, indent=4)
 
+
 def get_user_if_exist(user_id)-> bool:
     with open(USERPROFILE_PATH, 'r') as f:
         user_profiles = json.load(f)
     
     return user_id in user_profiles
+
 
 def create_user_profile(user_id, name, age, dietary_preferences, allergies, health_conditions):
     with open(USERPROFILE_PATH, 'r') as f:
@@ -99,6 +168,7 @@ def create_user_profile(user_id, name, age, dietary_preferences, allergies, heal
 
     with open(USERPROFILE_PATH, 'w') as f:
         json.dump(user_profiles, f, indent=4)
+
 
 def  update_user_profile(user_id, name=None, age=None, dietary_preferences=None, allergies=None, health_conditions=None):
     with open(USERPROFILE_PATH, 'r') as f:
@@ -121,6 +191,7 @@ def  update_user_profile(user_id, name=None, age=None, dietary_preferences=None,
 
     with open(USERPROFILE_PATH, 'w') as f:
         json.dump(user_profiles, f, indent=4)
+
 
 def convert_time_to_context(time_str):
     if not time_str:
