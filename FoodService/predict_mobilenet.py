@@ -80,6 +80,11 @@ def predict(model, image, device, confidence_threshold=0.25, temperature=1.5, tt
 
     detected_indices = (group_avg > 0.5).nonzero(as_tuple=True)[0]
 
+    detected_groups = [
+    group_vocab[i.item()]
+    for i in sorted(detected_indices, key=lambda i: group_avg[i.item()].item(), reverse=True)
+    ]
+
     result = {
         "specific_dish":     mappings['dishes'][dish_idx.item()]
                              if dish_conf.item() >= confidence_threshold else "uncertain",
@@ -93,7 +98,7 @@ def predict(model, image, device, confidence_threshold=0.25, temperature=1.5, tt
                              if pare_conf.item() >= confidence_threshold else "uncertain",
         "parent_confidence": round(pare_conf.item(), 3),
 
-        "food_groups":       [group_vocab[i.item()] for i in detected_indices],
+        "food_groups":       detected_groups,
     }
 
     return result

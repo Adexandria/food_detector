@@ -1,356 +1,356 @@
 {
   "artichoke_bottoms_in_olive_oil": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "baby_back_ribs": [
-    "ff_meat"
+    "meat"
   ],
   "baked_potato": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "banh_mi": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "banh_xeo": [
-    "ff_meat,ff_seafood,ff_vegetable"
+    "meat,seafood,vegetable"
   ],
   "beef_bourguignon": [
-    "ff_meat,ff_soup,ff_vegetable"
+    "meat,soup,vegetable"
   ],
   "beef_carpaccio": [
-    "ff_meat"
+    "meat"
   ],
   "beef_in_oyster_sauce": [
-    "ff_meat"
+    "meat"
   ],
   "biryani": [
-    "ff_meat,ff_rice"
+    "meat,rice"
   ],
   "blanquette_de_veau": [
-    "ff_meat,ff_soup,ff_vegetable"
+    "meat,soup,vegetable"
   ],
   "borek": [
-    "ff_bread,ff_meat"
+    "bread,meat"
   ],
   "breakfast_burrito": [
-    "ff_bread,ff_egg,ff_meat,ff_vegetable"
+    "bread,egg,meat,vegetable"
   ],
   "bruschetta": [
-    "ff_bread,ff_vegetable"
+    "bread,vegetable"
   ],
   "bun_cha": [
-    "ff_meat,ff_noodles/pasta,ff_vegetable"
+    "meat,noodles/pasta,vegetable"
   ],
   "burger": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "butter_chicken": [
-    "ff_meat,ff_soup"
+    "meat,soup"
   ],
   "caesar_salad": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "cao_lau": [
-    "ff_meat,ff_noodles/pasta,ff_vegetable"
+    "meat,noodles/pasta,vegetable"
   ],
   "caprese_salad": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "cha_ca": [
-    "ff_noodles/pasta,ff_seafood,ff_vegetable"
+    "noodles/pasta,seafood,vegetable"
   ],
   "chicken_quesadilla": [
-    "ff_bread,ff_meat"
+    "bread,meat"
   ],
   "chilaquiles": [
-    "ff_bread,ff_egg,ff_vegetable"
+    "bread,egg,vegetable"
   ],
   "chiles_en_nogada": [
-    "ff_meat,ff_vegetable"
+    "meat,vegetable"
   ],
   "chole": [
-    "ff_soup,ff_vegetable"
+    "soup,vegetable"
   ],
   "chow_mein": [
-    "ff_meat,ff_noodles/pasta,ff_vegetable"
+    "meat,noodles/pasta,vegetable"
   ],
   "cig_kofte": [
-    "ff_meat"
+    "meat"
   ],
   "clam_chowder": [
-    "ff_seafood,ff_soup"
+    "seafood,soup"
   ],
   "club_sandwich": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "coconut_milk_soup": [
-    "ff_soup"
+    "soup"
   ],
   "com_tam": [
-    "ff_egg,ff_meat,ff_rice,ff_vegetable"
+    "egg,meat,rice,vegetable"
   ],
   "confit_de_canard": [
-    "ff_meat"
+    "meat"
   ],
   "coq_au_vin": [
-    "ff_meat,ff_soup"
+    "meat,soup"
   ],
   "crispy_chicken": [
-    "ff_fried_food,ff_meat"
+    "fried_food,meat"
   ],
   "croque_madame": [
-    "ff_bread,ff_egg,ff_meat"
+    "bread,egg,meat"
   ],
   "donut": [
-    "ff_bread,ff_fried_food"
+    "bread,fried_food"
   ],
   "eggs_benedict": [
-    "ff_bread,ff_egg,ff_meat"
+    "bread,egg,meat"
   ],
   "enchiladas": [
-    "ff_bread,ff_meat,ff_soup"
+    "bread,meat,soup"
   ],
   "foie_gras": [
-    "ff_meat"
+    "meat"
   ],
   "french_onion_soup": [
-    "ff_bread,ff_soup,ff_vegetable"
+    "bread,soup,vegetable"
   ],
   "fries": [
-    "ff_fried_food,ff_vegetable"
+    "fried_food,vegetable"
   ],
   "gnocchi": [
-    "ff_noodles/pasta"
+    "noodles/pasta"
   ],
   "goya_champuru": [
-    "ff_egg,ff_meat,ff_vegetable"
+    "egg,meat,vegetable"
   ],
   "greek_salad": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "green_curry": [
-    "ff_meat,ff_soup,ff_vegetable"
+    "meat,soup,vegetable"
   ],
   "guacamole": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "gyro": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "hamburger": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "hamsi": [
-    "ff_fried_food,ff_seafood"
+    "fried_food,seafood"
   ],
   "hot_dog": [
-    "ff_bread,ff_meat"
+    "bread,meat"
   ],
   "hue_beef_rice_vermicelli_soup": [
-    "ff_meat,ff_noodles/pasta,ff_soup,ff_vegetable"
+    "meat,noodles/pasta,soup,vegetable"
   ],
   "huevos_rancheros": [
-    "ff_bread,ff_egg,ff_vegetable"
+    "bread,egg,vegetable"
   ],
   "hunkar_begendi": [
-    "ff_meat,ff_vegetable"
+    "meat,vegetable"
   ],
   "icli_kofte": [
-    "ff_fried_food,ff_meat"
+    "fried_food,meat"
   ],
   "ispanak": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "kaali_daal": [
-    "ff_soup,ff_vegetable"
+    "soup,vegetable"
   ],
   "kebap": [
-    "ff_meat"
+    "meat"
   ],
   "khao_soi": [
-    "ff_meat,ff_noodles/pasta,ff_soup"
+    "meat,noodles/pasta,soup"
   ],
   "kisir": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "kolokythokeftedes": [
-    "ff_fried_food,ff_vegetable"
+    "fried_food,vegetable"
   ],
   "kung_pao_chicken": [
-    "ff_meat,ff_vegetable"
+    "meat,vegetable"
   ],
   "lasagna": [
-    "ff_meat,ff_noodles/pasta,ff_vegetable"
+    "meat,noodles/pasta,vegetable"
   ],
   "lobster_bisque": [
-    "ff_seafood,ff_soup"
+    "seafood,soup"
   ],
   "lobster_roll_sandwich": [
-    "ff_bread,ff_seafood"
+    "bread,seafood"
   ],
   "malai_kofta": [
-    "ff_dumpling,ff_vegetable"
+    "dumpling,vegetable"
   ],
   "manti": [
-    "ff_dumpling,ff_meat"
+    "dumpling,meat"
   ],
   "melitzanosalata": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "minestrone": [
-    "ff_noodles/pasta,ff_soup,ff_vegetable"
+    "noodles/pasta,soup,vegetable"
   ],
   "miso_soup": [
-    "ff_soup"
+    "soup"
   ],
   "moussaka": [
-    "ff_meat,ff_vegetable"
+    "meat,vegetable"
   ],
   "mushroom_risotto": [
-    "ff_rice,ff_vegetable"
+    "rice,vegetable"
   ],
   "naan": [
-    "ff_bread"
+    "bread"
   ],
   "nachos": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "noodles_with_fish_curry": [
-    "ff_noodles/pasta,ff_seafood,ff_soup"
+    "noodles/pasta,seafood,soup"
   ],
   "okinawa_soba": [
-    "ff_meat,ff_noodles/pasta,ff_soup"
+    "meat,noodles/pasta,soup"
   ],
   "omelette": [
-    "ff_egg"
+    "egg"
   ],
   "onion_rings": [
-    "ff_fried_food,ff_vegetable"
+    "fried_food,vegetable"
   ],
   "palak_paneer": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "paneer_tikka": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "papdi_chaat": [
-    "ff_bread,ff_vegetable"
+    "bread,vegetable"
   ],
   "pastitsio": [
-    "ff_meat,ff_noodles/pasta"
+    "meat,noodles/pasta"
   ],
   "peking_duck": [
-    "ff_meat"
+    "meat"
   ],
   "pho": [
-    "ff_meat,ff_noodles/pasta,ff_soup"
+    "meat,noodles/pasta,soup"
   ],
   "pizza": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "pozole": [
-    "ff_meat,ff_soup,ff_vegetable"
+    "meat,soup,vegetable"
   ],
   "prime_rib": [
-    "ff_meat"
+    "meat"
   ],
   "ramen": [
-    "ff_egg,ff_meat,ff_noodles/pasta,ff_soup"
+    "egg,meat,noodles/pasta,soup"
   ],
   "ratatouille": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "ravioli": [
-    "ff_dumpling,ff_meat"
+    "dumpling,meat"
   ],
   "rogan_josh": [
-    "ff_meat"
+    "meat"
   ],
   "saganaki": [
-    "ff_fried_food"
+    "fried_food"
   ],
   "salade_nicoise": [
-    "ff_egg,ff_seafood,ff_vegetable"
+    "egg,seafood,vegetable"
   ],
   "sandwich": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "sarma": [
-    "ff_meat,ff_rice,ff_vegetable"
+    "meat,rice,vegetable"
   ],
   "sashimi": [
-    "ff_seafood"
+    "seafood"
   ],
   "soba_noodle": [
-    "ff_noodles/pasta"
+    "noodles/pasta"
   ],
   "souvlaki": [
-    "ff_meat"
+    "meat"
   ],
   "spaghetti_bolognese": [
-    "ff_meat,ff_noodles/pasta"
+    "meat,noodles/pasta"
   ],
   "spaghetti_carbonara": [
-    "ff_egg,ff_meat,ff_noodles/pasta"
+    "egg,meat,noodles/pasta"
   ],
   "spanakopita": [
-    "ff_bread,ff_vegetable"
+    "bread,vegetable"
   ],
   "spring_rolls": [
-    "ff_fried_food,ff_vegetable"
+    "fried_food,vegetable"
   ],
   "steak": [
-    "ff_meat"
+    "meat"
   ],
   "sukiyaki": [
-    "ff_meat,ff_soup,ff_vegetable"
+    "meat,soup,vegetable"
   ],
   "sushi": [
-    "ff_rice,ff_seafood"
+    "rice,seafood"
   ],
   "tacos": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "takoyaki": [
-    "ff_dumpling,ff_seafood"
+    "dumpling,seafood"
   ],
   "tandoori_chicken": [
-    "ff_meat"
+    "meat"
   ],
   "taquito": [
-    "ff_bread,ff_fried_food,ff_meat,ff_vegetable"
+    "bread,fried_food,meat,vegetable"
   ],
   "tempura": [
-    "ff_fried_food,ff_seafood,ff_vegetable"
+    "fried_food,seafood,vegetable"
   ],
   "thai_papaya_salad": [
-    "ff_vegetable"
+    "vegetable"
   ],
   "tomatokeftedes": [
-    "ff_fried_food,ff_vegetable"
+    "fried_food,vegetable"
   ],
   "tostadas": [
-    "ff_bread,ff_meat,ff_vegetable"
+    "bread,meat,vegetable"
   ],
   "udon_noodle": [
-    "ff_noodles/pasta,ff_soup"
+    "noodles/pasta,soup"
   ],
   "vermicelli_noodles_with_snails": [
-    "ff_noodles/pasta,ff_seafood,ff_soup"
+    "noodles/pasta,seafood,soup"
   ],
   "winter_melon_soup": [
-    "ff_soup,ff_vegetable"
+    "soup,vegetable"
   ],
   "xiao_long_bao": [
-    "ff_dumpling,ff_meat,ff_soup"
+    "dumpling,meat,soup"
   ],
   "yellow_curry": [
-    "ff_meat,ff_soup,ff_vegetable"
+    "meat,soup,vegetable"
   ],
   "yemista": [
-    "ff_rice,ff_vegetable"
+    "rice,vegetable"
   ],
   "zha_jiang_mian": [
-    "ff_meat,ff_noodles/pasta,ff_vegetable"
+    "meat,noodles/pasta,vegetable"
   ]
 }
