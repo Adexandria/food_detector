@@ -21,6 +21,8 @@ USER_PROFILE_KEYWORDS = {
 MESSAGE_KEYWORDS = {
     "USER": "user",
     "ASSISTANT": "assistant",
+    "ROLE": "role",
+    'CONTENT': "content",
     "TIMESTAMP": "timestamp",
     "IS_TASK_COMPLETED": "is_task_completed"
 }

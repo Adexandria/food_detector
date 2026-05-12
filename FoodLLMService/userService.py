@@ -61,7 +61,7 @@ def get_recent_user_message_history(user_id):
         )
         else [
             {
-                "role": msg[MESSAGE_KEYWORDS["USER"]],
+                "role": msg[MESSAGE_KEYWORDS["ROLE"]],
                 "content": msg[MESSAGE_KEYWORDS["CONTENT"]]
             }
             for msg in today_messages
