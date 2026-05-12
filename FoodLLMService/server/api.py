@@ -28,10 +28,16 @@ async def main(user_message: str = Query(...)) -> Response:
 async def set_food(response: PredictionResponse = Body(...)):
     try:
         dish = response.predicted_label.specific_dish
-        if dish.lower() == "unknown":
+        if dish.lower() == "uncertain":
             dish = response.predicted_label.food_groups[0] if response.predicted_label.food_groups else "unknown dish"
         
-        nutritional_response = generate_food_nutritional_response(dish)
+        cuisine = response.predicted_label.cuisine
+        if cuisine.lower() == "uncertain":
+            cuisine = "unknown cuisine"
+
+        food_groups = response.predicted_label.food_groups[1:] if len(response.predicted_label.food_groups) > 1 else "unknown food groups"
+
+        nutritional_response = generate_food_nutritional_response(dish, cuisine, food_groups)
 
         if(userService.get_user_if_exist("jane_smith")):
             userService.update_user_food_profile("jane_smith", dish, nutritional_response)

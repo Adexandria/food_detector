@@ -33,13 +33,11 @@ def generate_llm_response(user_input, user_profile, messages_history):
 
     current_response = response.choices[0].message.content
 
-    print(f"Generated nutritional response: {current_response}")
-    
     return current_response
 
 
-def generate_food_nutritional_response(dish):
-    prompt = generate_nutritional_prompt(dish)
+def generate_food_nutritional_response(dish,cuisine, food_groups):
+    prompt = generate_nutritional_prompt(dish, cuisine, food_groups)
 
     messages = [
         {"role": "user", "content": prompt},
@@ -54,7 +52,6 @@ def generate_food_nutritional_response(dish):
 
     current_response = response.choices[0].message.content
 
-    print(f"Generated nutritional response: {current_response}")
     
     return current_response
 
@@ -115,18 +112,22 @@ Date and time: {date_and_time}
 """
 
 
-def generate_nutritional_prompt(dish):
+def generate_nutritional_prompt(dish, cuisine, food_groups):
     return  f"""
 You are a nutritional expert.
 
 Given the dish below, describe its nutritional properties in a single sentence.
 
 Dish: {dish}
+Use the following context if it is available to make assumptions and enrich the response, otherwise respond with "unknown dish":
+cuisine: {cuisine}
+food groups: {food_groups}
 
 Rules:
 - Do not add extra text
 - Do not explain your reasoning
 - Output must follow this format exactly:
+
 "{dish} contains [nutritional_info]"
 """
 
